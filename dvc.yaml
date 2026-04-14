@@ -1,0 +1,8 @@
+stages:
+  make_dataset:
+    cmd: python src/make_dataset.py
+    deps:
+    - src/make_dataset.py
+    outs:
+    - credit_train.csv
+    - credit_val.csv
